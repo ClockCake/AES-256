@@ -44,9 +44,54 @@
 }
 
 - (IBAction)DecryptAction:(id)sender {
-    
-    _ClearText.text = [_CipherText.text aes256_decrypt:@"ucf-Gx4-dsn-oyH"];
-    _ClearText.text =[_ClearText.text stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    _CipherText.text =@"";
+    NSError *error;
+    _Context = [[LAContext new]init];
+    _Context.localizedFallbackTitle =@"输入密码";
+    _Context.localizedCancelTitle =@"取消";
+    _Context.localizedReason =@"通过Home键验证已有指纹";
+    if ([_Context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]) {
+        
+        [_Context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:_Context.localizedReason reply:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                dispatch_async(dispatch_get_main_queue(),^{
+                    _ClearText.text = [_CipherText.text aes256_decrypt:@"ucf-Gx4-dsn-oyH"];
+                    _ClearText.text =[_ClearText.text stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                    _CipherText.text =@"";
+                    
+                });
+            }
+            else{
+                switch (error.code) {
+                    case LAErrorUserFallback:
+                    {
+                        NSLog(@"使用者请求输入手动输入密码");
+                        break;
+                        
+                    }
+                    case LAErrorAppCancel:
+                    {
+                        NSLog(@"应用中断");
+                        break;
+                    }
+                    case LAErrorPasscodeNotSet:
+                    {
+                        NSLog(@"密码未设置");
+                        break;
+                    }
+                    case LAErrorSystemCancel:
+                    {
+                        NSLog(@"TouchID对话框被系统取消，例如按下Home或者电源键");
+                        break;
+                    }
+                        
+                    default:
+                        break;
+                }
+            }
+            
+        }];
+        
+   }
+   
 }
 @end

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <LocalAuthentication/LocalAuthentication.h>
 @interface CBCViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *ClearText;
 @property (weak, nonatomic) IBOutlet UITextField *CipherText;
-
+@property (strong,nonatomic) LAContext *Context;
 - (IBAction)EncryptAction:(id)sender;
 - (IBAction)DecryptAction:(id)sender;
 @property (strong,nonatomic) NSString *key;

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 #import "NSString+AES_ECB.h"
 @interface ECBViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *ClearText;
 - (IBAction)EnercyAction:(id)sender;
 - (IBAction)DecryptAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *CipherText;
-
+@property (strong,nonatomic) LAContext *Context;
 @end
