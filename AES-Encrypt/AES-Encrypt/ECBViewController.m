@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.ClearText.delegate =self;
+    self.CipherText.delegate =self;
     // Do any additional setup after loading the view.
 }
 
@@ -26,6 +28,11 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 /*
 #pragma mark - Navigation

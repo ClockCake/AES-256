@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0852A5AE2025EB2600908E78 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0852A5AD2025EB2600908E78 /* LoginViewController.m */; };
+		0852A5B12026EE2A00908E78 /* TOTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0852A5B02026EE2A00908E78 /* TOTPViewController.m */; };
+		0852A5C22029391200908E78 /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0852A5BC2029391200908E78 /* OTPGenerator.m */; };
+		0852A5C32029391200908E78 /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0852A5C02029391200908E78 /* TOTPGenerator.m */; };
+		0852A5C42029391200908E78 /* MF_Base32Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0852A5C12029391200908E78 /* MF_Base32Additions.m */; };
 		08CFC0C020198CD600A6D7A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CFC0BF20198CD600A6D7A0 /* AppDelegate.m */; };
 		08CFC0C320198CD600A6D7A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CFC0C220198CD600A6D7A0 /* ViewController.m */; };
 		08CFC0C620198CD600A6D7A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CFC0C420198CD600A6D7A0 /* Main.storyboard */; };
@@ -24,6 +29,16 @@
 
 /* Begin PBXFileReference section */
 		045654BEC5183ACE2C7ACB98 /* Pods_AES_Encrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AES_Encrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0852A5AC2025EB2600908E78 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0852A5AD2025EB2600908E78 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0852A5AF2026EE2A00908E78 /* TOTPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTPViewController.h; sourceTree = "<group>"; };
+		0852A5B02026EE2A00908E78 /* TOTPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTPViewController.m; sourceTree = "<group>"; };
+		0852A5BC2029391200908E78 /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
+		0852A5BD2029391200908E78 /* OTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPGenerator.h; sourceTree = "<group>"; };
+		0852A5BE2029391200908E78 /* MF_Base32Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base32Additions.h; sourceTree = "<group>"; };
+		0852A5BF2029391200908E78 /* TOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTPGenerator.h; sourceTree = "<group>"; };
+		0852A5C02029391200908E78 /* TOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGenerator.m; sourceTree = "<group>"; };
+		0852A5C12029391200908E78 /* MF_Base32Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base32Additions.m; sourceTree = "<group>"; };
 		08CFC0BB20198CD600A6D7A0 /* AES-Encrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AES-Encrypt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CFC0BE20198CD600A6D7A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08CFC0BF20198CD600A6D7A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0852A5B22029384F00908E78 /* TOTP Framework */ = {
+			isa = PBXGroup;
+			children = (
+				0852A5BE2029391200908E78 /* MF_Base32Additions.h */,
+				0852A5C12029391200908E78 /* MF_Base32Additions.m */,
+				0852A5BD2029391200908E78 /* OTPGenerator.h */,
+				0852A5BC2029391200908E78 /* OTPGenerator.m */,
+				0852A5BF2029391200908E78 /* TOTPGenerator.h */,
+				0852A5C02029391200908E78 /* TOTPGenerator.m */,
+			);
+			path = "TOTP Framework";
+			sourceTree = "<group>";
+		};
 		08CFC0B220198CD600A6D7A0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +111,13 @@
 		08CFC0BD20198CD600A6D7A0 /* AES-Encrypt */ = {
 			isa = PBXGroup;
 			children = (
+				0852A5B22029384F00908E78 /* TOTP Framework */,
 				08CFC0BE20198CD600A6D7A0 /* AppDelegate.h */,
 				08CFC0BF20198CD600A6D7A0 /* AppDelegate.m */,
+				0852A5AC2025EB2600908E78 /* LoginViewController.h */,
+				0852A5AD2025EB2600908E78 /* LoginViewController.m */,
+				0852A5AF2026EE2A00908E78 /* TOTPViewController.h */,
+				0852A5B02026EE2A00908E78 /* TOTPViewController.m */,
 				08CFC0C120198CD600A6D7A0 /* ViewController.h */,
 				08CFC0C220198CD600A6D7A0 /* ViewController.m */,
 				08CFC0D42019916100A6D7A0 /* CBCViewController.h */,
@@ -257,11 +290,16 @@
 				08CFC0E5201A364200A6D7A0 /* NSString+AES_CBC.m in Sources */,
 				08CFC0D62019916100A6D7A0 /* CBCViewController.m in Sources */,
 				08CFC0E2201A331C00A6D7A0 /* NSString+AES_ECB.m in Sources */,
+				0852A5AE2025EB2600908E78 /* LoginViewController.m in Sources */,
 				08CFC0CE20198CD600A6D7A0 /* main.m in Sources */,
+				0852A5C42029391200908E78 /* MF_Base32Additions.m in Sources */,
 				08CFC0C020198CD600A6D7A0 /* AppDelegate.m in Sources */,
+				0852A5C22029391200908E78 /* OTPGenerator.m in Sources */,
 				08CFC0DF201A31C200A6D7A0 /* NSData+AES_ECB.m in Sources */,
+				0852A5C32029391200908E78 /* TOTPGenerator.m in Sources */,
 				08CFC0D9201992F000A6D7A0 /* NSData+AES_CBC.m in Sources */,
 				08CFC0DC201A2CDE00A6D7A0 /* ECBViewController.m in Sources */,
+				0852A5B12026EE2A00908E78 /* TOTPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,9 @@
     [super viewDidLoad];
     _key = @"ucf-Gx4-dsn-oyH";
     _IV =@"BdA-&@D-mNC";
+    
+    self.ClearText.delegate =self;
+    self.CipherText.delegate =self;
     // Do any additional setup after loading the view.
 }
 
@@ -38,6 +41,11 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 - (IBAction)EncryptAction:(id)sender {
     _CipherText.text = [_ClearText.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -125,8 +133,5 @@
     
     
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    return [textField resignFirstResponder];
-}
+
 @end
