@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="79"/>
+            <point key="canvasLocation" x="1236" y="99"/>
         </scene>
         <!--AES-256-ECB-->
         <scene sceneID="vfK-4L-Cg7">
@@ -183,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORv-qT-nag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="87"/>
+            <point key="canvasLocation" x="1916" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mLP-aJ-FbI">
@@ -201,7 +200,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SdE-nN-icv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-555" y="55"/>
+            <point key="canvasLocation" x="-84" y="99"/>
         </scene>
         <!--登录页面-->
         <scene sceneID="Zqc-QZ-MyV">
@@ -211,51 +210,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="4y7-qs-Pwe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="4y7-qs-Pwe">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pf-cf-8JB">
-                                <rect key="frame" x="20" y="99" width="61" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pf-cf-8JB">
+                                <rect key="frame" x="20" y="131" width="72" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入账号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-mI-zoV">
-                                <rect key="frame" x="124" y="99" width="270" height="35"/>
+                                <rect key="frame" x="100" y="131" width="294" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drA-FJ-5ad">
-                                <rect key="frame" x="20" y="177" width="47" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drA-FJ-5ad">
+                                <rect key="frame" x="20" y="208" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-LE-R10">
-                                <rect key="frame" x="127" y="177" width="267" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-LE-R10">
+                                <rect key="frame" x="100" y="203" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入6位数Pin码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-eI-QrR">
-                                <rect key="frame" x="134" y="252" width="260" height="23"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIA-7S-Zsm">
-                                <rect key="frame" x="20" y="237" width="61" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="U2n-x1-gti"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz2-Vc-8Sx">
+                                <rect key="frame" x="-4" y="351" width="104" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="LoginAction:" destination="MdM-cO-HGF" eventType="touchUpInside" id="RXe-xR-Dpv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIA-7S-Zsm">
+                                <rect key="frame" x="20" y="258" width="56" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入6位数Pin码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-eI-QrR">
+                                <rect key="frame" x="100" y="266" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kz1-la-Dxe">
-                                <rect key="frame" x="525" y="348" width="133" height="46"/>
+                                <rect key="frame" x="265" y="353" width="129" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <state key="normal" title="获取Pin码"/>
@@ -265,23 +276,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Z3d-eI-QrR" firstAttribute="leading" secondItem="UIA-7S-Zsm" secondAttribute="trailing" constant="53" id="6lU-jU-RfO"/>
-                            <constraint firstItem="drA-FJ-5ad" firstAttribute="leading" secondItem="7pf-cf-8JB" secondAttribute="leading" id="9tj-kH-PgU"/>
-                            <constraint firstItem="UIA-7S-Zsm" firstAttribute="leading" secondItem="jWC-0Y-Ftt" secondAttribute="leadingMargin" id="Ko2-9u-P3n"/>
-                            <constraint firstItem="xWd-LE-R10" firstAttribute="leading" secondItem="drA-FJ-5ad" secondAttribute="trailing" constant="60" id="NGq-di-xP3"/>
-                            <constraint firstItem="4y7-qs-Pwe" firstAttribute="top" secondItem="var-AE-gc5" secondAttribute="top" id="P4a-Vz-Fv7"/>
-                            <constraint firstItem="drA-FJ-5ad" firstAttribute="top" secondItem="7pf-cf-8JB" secondAttribute="bottom" constant="54" id="SX9-1U-xHb"/>
-                            <constraint firstItem="4y7-qs-Pwe" firstAttribute="trailing" secondItem="var-AE-gc5" secondAttribute="trailing" id="V6g-tg-nqi"/>
-                            <constraint firstItem="4y7-qs-Pwe" firstAttribute="bottom" secondItem="var-AE-gc5" secondAttribute="bottom" id="Ysa-wj-nkp"/>
-                            <constraint firstItem="UIA-7S-Zsm" firstAttribute="centerY" secondItem="Z3d-eI-QrR" secondAttribute="centerY" constant="-32.5" id="lnU-j6-Pnv"/>
-                            <constraint firstItem="7pf-cf-8JB" firstAttribute="top" secondItem="var-AE-gc5" secondAttribute="top" constant="35" id="lzF-ZR-cdA"/>
-                            <constraint firstItem="drA-FJ-5ad" firstAttribute="top" secondItem="xWd-LE-R10" secondAttribute="top" constant="-32" id="o1Q-bd-VhI"/>
-                            <constraint firstItem="UIA-7S-Zsm" firstAttribute="top" secondItem="drA-FJ-5ad" secondAttribute="bottom" constant="36" id="pkX-u1-p2p"/>
-                            <constraint firstItem="4y7-qs-Pwe" firstAttribute="leading" secondItem="var-AE-gc5" secondAttribute="leading" id="qcu-dU-ptE"/>
-                            <constraint firstItem="UIA-7S-Zsm" firstAttribute="centerX" secondItem="7pf-cf-8JB" secondAttribute="centerX" id="sNJ-sB-wmy"/>
-                            <constraint firstItem="7pf-cf-8JB" firstAttribute="leading" secondItem="var-AE-gc5" secondAttribute="leading" constant="20" id="ycO-Af-a3V"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="var-AE-gc5"/>
                     </view>
                     <navigationItem key="navigationItem" title="登录页面" id="IUt-7Q-VBQ"/>
@@ -293,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6M-Bw-oKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686.95652173913049" y="26.086956521739133"/>
+            <point key="canvasLocation" x="569.56521739130437" y="98.641304347826093"/>
         </scene>
         <!--谷歌双重认证-->
         <scene sceneID="sAo-2t-zrg">
@@ -409,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3h-cV-GCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="177" y="1259"/>
+            <point key="canvasLocation" x="569.56521739130437" y="806.25000000000011"/>
         </scene>
     </scenes>
     <resources>
