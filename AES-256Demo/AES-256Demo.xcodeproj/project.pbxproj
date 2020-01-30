@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081B123723E32C9C00CC3844 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081B123623E32C9C00CC3844 /* HomeViewController.m */; };
+		081B123A23E330ED00CC3844 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081B123923E330ED00CC3844 /* DetailViewController.m */; };
 		08F13F45204036AC0023D57D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F44204036AC0023D57D /* AppDelegate.m */; };
 		08F13F4B204036AC0023D57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F13F49204036AC0023D57D /* Main.storyboard */; };
 		08F13F4D204036AC0023D57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F13F4C204036AC0023D57D /* Assets.xcassets */; };
@@ -16,13 +18,14 @@
 		08F13F62204050490023D57D /* NSString+AES_ECB.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F5B204050480023D57D /* NSString+AES_ECB.m */; };
 		08F13F63204050490023D57D /* NSData+AES_CBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F5D204050480023D57D /* NSData+AES_CBC.m */; };
 		08F13F64204050490023D57D /* NSData+AES_ECB.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F5E204050480023D57D /* NSData+AES_ECB.m */; };
-		08F13F67204050BC0023D57D /* SyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F66204050BC0023D57D /* SyncViewController.m */; };
-		08F13F70204136FB0023D57D /* EncryptTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F6F204136FB0023D57D /* EncryptTableViewController.m */; };
-		08F13F732041370B0023D57D /* DecryptTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F13F722041370B0023D57D /* DecryptTableViewController.m */; };
 		A4DCBE482AB91CE4FCB8F2C8 /* libPods-AES-256Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B65C9930A2A37338109192EB /* libPods-AES-256Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081B123523E32C9C00CC3844 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		081B123623E32C9C00CC3844 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		081B123823E330ED00CC3844 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		081B123923E330ED00CC3844 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		08F13F40204036AC0023D57D /* AES-256Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AES-256Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F13F43204036AC0023D57D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08F13F44204036AC0023D57D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,12 +42,6 @@
 		08F13F5E204050480023D57D /* NSData+AES_ECB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES_ECB.m"; sourceTree = "<group>"; };
 		08F13F5F204050480023D57D /* NSData+AES_ECB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES_ECB.h"; sourceTree = "<group>"; };
 		08F13F60204050480023D57D /* NSString+AES_ECB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES_ECB.h"; sourceTree = "<group>"; };
-		08F13F65204050BC0023D57D /* SyncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncViewController.h; sourceTree = "<group>"; };
-		08F13F66204050BC0023D57D /* SyncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncViewController.m; sourceTree = "<group>"; };
-		08F13F6E204136FB0023D57D /* EncryptTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptTableViewController.h; sourceTree = "<group>"; };
-		08F13F6F204136FB0023D57D /* EncryptTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptTableViewController.m; sourceTree = "<group>"; };
-		08F13F712041370B0023D57D /* DecryptTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecryptTableViewController.h; sourceTree = "<group>"; };
-		08F13F722041370B0023D57D /* DecryptTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecryptTableViewController.m; sourceTree = "<group>"; };
 		5FFBDD43AAE9041C794FD39C /* Pods-AES-256Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AES-256Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AES-256Demo/Pods-AES-256Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B65C9930A2A37338109192EB /* libPods-AES-256Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AES-256Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEFCF04DE93C2ADA0CA05E6 /* Pods-AES-256Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AES-256Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AES-256Demo/Pods-AES-256Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,35 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08F13F37204036AC0023D57D = {
+		081B123423E32C3900CC3844 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				08F13F42204036AC0023D57D /* AES-256Demo */,
-				08F13F41204036AC0023D57D /* Products */,
-				76F6C34F2F86909E626E50AE /* Pods */,
-				470F7E499C426BBE451361FF /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		08F13F41204036AC0023D57D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				08F13F40204036AC0023D57D /* AES-256Demo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		08F13F42204036AC0023D57D /* AES-256Demo */ = {
-			isa = PBXGroup;
-			children = (
+				081B123523E32C9C00CC3844 /* HomeViewController.h */,
+				081B123623E32C9C00CC3844 /* HomeViewController.m */,
+				081B123823E330ED00CC3844 /* DetailViewController.h */,
+				081B123923E330ED00CC3844 /* DetailViewController.m */,
 				08F13F43204036AC0023D57D /* AppDelegate.h */,
 				08F13F44204036AC0023D57D /* AppDelegate.m */,
-				08F13F65204050BC0023D57D /* SyncViewController.h */,
-				08F13F66204050BC0023D57D /* SyncViewController.m */,
-				08F13F6E204136FB0023D57D /* EncryptTableViewController.h */,
-				08F13F6F204136FB0023D57D /* EncryptTableViewController.m */,
-				08F13F712041370B0023D57D /* DecryptTableViewController.h */,
-				08F13F722041370B0023D57D /* DecryptTableViewController.m */,
 				08F13F59204050470023D57D /* NSData+AES_CBC.h */,
 				08F13F5D204050480023D57D /* NSData+AES_CBC.m */,
 				08F13F5F204050480023D57D /* NSData+AES_ECB.h */,
@@ -105,7 +82,25 @@
 				08F13F51204036AC0023D57D /* Info.plist */,
 				08F13F52204036AC0023D57D /* main.m */,
 			);
-			path = "AES-256Demo";
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		08F13F37204036AC0023D57D = {
+			isa = PBXGroup;
+			children = (
+				081B123423E32C3900CC3844 /* Demo */,
+				08F13F41204036AC0023D57D /* Products */,
+				76F6C34F2F86909E626E50AE /* Pods */,
+				470F7E499C426BBE451361FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08F13F41204036AC0023D57D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08F13F40204036AC0023D57D /* AES-256Demo.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		470F7E499C426BBE451361FF /* Frameworks */ = {
@@ -252,12 +247,11 @@
 			files = (
 				08F13F61204050490023D57D /* NSString+AES_CBC.m in Sources */,
 				08F13F62204050490023D57D /* NSString+AES_ECB.m in Sources */,
-				08F13F732041370B0023D57D /* DecryptTableViewController.m in Sources */,
+				081B123723E32C9C00CC3844 /* HomeViewController.m in Sources */,
 				08F13F53204036AC0023D57D /* main.m in Sources */,
-				08F13F70204136FB0023D57D /* EncryptTableViewController.m in Sources */,
 				08F13F64204050490023D57D /* NSData+AES_ECB.m in Sources */,
+				081B123A23E330ED00CC3844 /* DetailViewController.m in Sources */,
 				08F13F45204036AC0023D57D /* AppDelegate.m in Sources */,
-				08F13F67204050BC0023D57D /* SyncViewController.m in Sources */,
 				08F13F63204050490023D57D /* NSData+AES_CBC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

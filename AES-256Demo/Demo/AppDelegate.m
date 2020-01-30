@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SyncViewController.h"
-#import "EncryptTableViewController.h"
-#import "DecryptTableViewController.h"
+#import "HomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,23 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    UINavigationController *NAV =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Nav"];
-    UITabBarItem *item =[[UITabBarItem alloc]initWithTitle:@"Sync" image:[UIImage imageNamed:@"Sync.png"] tag:101];
-    NAV.tabBarItem =item;
-    SyncViewController *Sync =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Sync"];
-   
-    EncryptTableViewController *Encrypt =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Encrypt"];
-    UITabBarItem *item01 =[[UITabBarItem alloc]initWithTitle:@"Encrypt" image:[UIImage imageNamed:@"Encrypt.png"] tag:102];
-    Encrypt.tabBarItem =item01;
-    
-    DecryptTableViewController *Decrypt =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Decrypt"];
-    UITabBarItem *item02=[[UITabBarItem alloc]initWithTitle:@"Decrypt" image:[UIImage imageNamed:@"Decrypt.png"] tag:103];
-    Decrypt.tabBarItem =item02;
-    NSArray *arrayControllers= [NSArray arrayWithObjects:Encrypt,Decrypt,NAV,nil];
-    UITabBarController *TBC =[[UITabBarController alloc]init];
-    TBC.tabBar.barStyle =UIBarStyleBlack;
-    TBC.viewControllers =arrayControllers;
-    self.window.rootViewController =TBC;
+    HomeViewController *VC = [[HomeViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:VC];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
